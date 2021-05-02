@@ -1,3 +1,16 @@
+:root {
+  /* Colours */
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary: hsl(45deg, 100%, 50%);
+  --secondary-dark: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --verydarkgrey: hsl(0deg, 0%, 10%);
+  --darkgrey: hsl(0deg, 0%, 30%);
+  --mediumgrey: hsl(0deg, 0%, 40%);
+  --lightgrey: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -7,6 +20,81 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--lightgrey);
 }
 
-/* Add styles here! */
+h1, h2, h3 {
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+strong {
+  color: var(--primary);
+}
+
+header {
+  background-color: var(--white);
+  border-bottom: 8px solid var(--mediumgrey);
+}
+
+.intro-chunk, .card {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.intro-chunk {
+  padding-top: 96px;
+  padding-bottom: 48px;
+  max-width: 400px;
+}
+
+.intro-chunk .title {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+}
+
+main {
+  padding: 64px 0;
+}
+
+.card {
+  background-color: var(--white);
+  border-bottom: 8px solid var(--mediumgrey);
+  padding: 24px;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+
+/* Utilities */
+.indented-heading {
+  background-color: var(--secondary);
+  border-bottom: 8px solid var(--secondary-dark);
+  width: -moz-fit-content;
+  padding: 16px 32px;
+  margin-left: -32px;
+  margin-top: -16px;
+}
+
+.max-width-wrapper {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
