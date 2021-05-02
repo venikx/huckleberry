@@ -28,7 +28,7 @@ h1, h2, h3 {
 }
 
 html {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 h1 {
@@ -46,11 +46,6 @@ strong {
 header {
   background-color: var(--white);
   border-bottom: 8px solid var(--mediumgrey);
-}
-
-.intro-chunk, .card {
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .intro-chunk {
@@ -76,6 +71,7 @@ main {
   background-color: var(--white);
   border-bottom: 8px solid var(--mediumgrey);
   padding: 24px;
+  margin: -24px;
 }
 
 .card p {
@@ -97,4 +93,6 @@ main {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
